@@ -10,21 +10,19 @@
  *
  */
 
-let count = 0;
 function isAPrimeNumber(num) {
-    for (i = 1; i <= num; i++) {
+    if (num < 2) {
+        return false;
+    }
+    for (i = 2; i < num; i++) {
         if (num % i == 0) {
-            count += 1;
+            return false;
         }
     }
-    if (num == 1 || count > 2) {
-        return false;
-    } else {
-        return true;
-    }
+    return true;
 }
 
-for (i = 1; i <= 100; i++) {
+for (let i = 0; i <= 100; i++) {
     if (isAPrimeNumber(i)) {
         console.log(i);
     }
