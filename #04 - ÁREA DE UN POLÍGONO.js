@@ -18,6 +18,14 @@
     { type: 'square', side: 4.0 }
 );
 */
+/*
+class Polygon {
+    constructor(area) {
+        this.area = area;
+        return this.calcArea();
+    }
+}
+*/
 
 class Triangle {
     constructor(base, height) {
@@ -35,7 +43,7 @@ class Triangle {
 }
 
 let triangle = new Triangle(10, 5);
-console.log(triangle.area);
+console.log("The area of a triangle es: " + triangle.area);
 
 class Rectangle {
     constructor(length, width) {
@@ -53,7 +61,7 @@ class Rectangle {
 }
 
 let rectangle = new Rectangle(5, 7)
-console.log(rectangle.area);
+console.log("The area of a rectangle es: " + rectangle.area);
 
 class Square {
     constructor(side) {
@@ -70,4 +78,4 @@ class Square {
 }
 
 let square = new Square(4);
-console.log(square.area);
+console.log("The area of a square es: " + square.area);
